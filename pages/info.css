@@ -1,0 +1,51 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+body {
+background-color: lightskyblue;
+background-size: 100% 100%;
+}
+
+h1 {
+font-family: Pacifico, cursive;
+font-size: 48px;
+color: blue;
+}
+
+#cost{
+	color: green;
+	font-family: Pacifico, cursive;
+	font-size: 48px;
+}
+
+.commentsspan{
+font-family: 'Pacifico', cursive;
+font-size: 24px;
+color: green;
+}
+
+.commentdiv{
+font-family: 'Pacifico', cursive;
+font-size: 18px;
+color: royalblue;
+}
+
+.divk{
+	width: 70%;
+	margin: auto;
+}
+
+#divinfo{
+	width: 70%;
+	margin: auto;
+	font-family: Pacifico, cursive;
+	font-size: 18px;
+	color: royalblue;
+	text-align: center;
+}
+
+#textcenter{
+	margin-left: 30%;
+}
+
