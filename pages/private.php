@@ -1,4 +1,5 @@
 <?php
+//Здесь зарегистрированным пользователям можно сдалать админами и добавить аватар
 connect();
 echo '<form action="index.php?page=5" method="post" enctype="multipart/form-data" class="input-group">';
 echo '<select name="userid">';
@@ -28,7 +29,7 @@ if(isset($_POST['addadmin']))
 $sel='select * from users where roleid=1 order by
 login';
 $res=mysql_query($sel);
-echo '<table class="table table-striped">';
+echo '<table class="table">';
 while($row=mysql_fetch_array($res,MYSQL_NUM)){
 echo '<tr>';
 echo '<td>'.$row[0].'</td>';

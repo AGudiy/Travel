@@ -11,14 +11,23 @@ include_once("pages/functions.php");
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<style type="text/css">
+	body{
+			background-attachment: fixed;}
+	</style>
 </head>
 <body>
 <div class="container">
 	<div class="row">
 		<header class="col-sm-12 col-md-12 col-lg-12" >
-		
 		<?php
 		include_once("pages/login.php");
+		/*
+		Для перехода в админ панель нужно ввести:
+		 "логин: travaler 
+		 пароль: travaler
+		 После высветится ссылка на админ панель
+		 */
 		?>
 		</header>
 	</div>
@@ -42,8 +51,6 @@ include_once("pages/functions.php");
 			include_once("pages/comments.php");
 		if($page==3)
 			include_once("pages/registration.php");
-		if($page==5 && isset($_SESSION['radmin']))
-			include_once("pages/private.php");
 	}
 	?>
 	</selection>
