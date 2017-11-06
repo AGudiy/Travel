@@ -2,7 +2,7 @@
 function connect(
 	$host='localhost',
 	$user='root',
-	$pass='qwertyuiop34',
+	$pass='AndGud/760247',
 	$dbname='travels')
 {
 	$linc=mysql_connect($host,$user,$pass) or die ('connection error');

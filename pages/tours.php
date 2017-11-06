@@ -19,12 +19,12 @@ connect();
 	echo '<div id="h"></div>';
 	//javascript functions
 ?>
+
 <script>
 function showCities(countryid)
 {
 	if(countryid=="0"){
-	document.getElementById('citylist').
-	innerHTML="";
+	document.getElementById('citylist').innerHTML="";
 	}
 	//creating AJAX object
 	if(window.XMLHttpRequest){
@@ -37,13 +37,11 @@ function showCities(countryid)
 	ao.onreadystatechange=function(){
 		if(ao.readyState==4 && ao.status==200)
 		{
-			document.getElementById('citylist').
-			innerHTML = ao.responseText;
+			document.getElementById('citylist').innerHTML = ao.responseText;
 		}
 	}
 	//creating and sending AJAX request
-	ao.open('GET',"pages/ajax1.php?cid="+countryid,
-	true);
+	ao.open('GET',"pages/ajax1.php?cid="+countryid,true);
 	ao.send(null);
 }
 

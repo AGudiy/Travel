@@ -40,9 +40,9 @@ if(isset($_GET['hotelid'])){
 	echo '<div class="divk">';
 	echo '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">';
     echo '<div class="carousel-inner" role="listbox" >';
-    $i=0;
+    $i=0;//для слайдера
 	while($row=mysql_fetch_array($res, MYSQL_NUM)){
-		if ($i==0) $active="active"; else $active="";
+		if ($i==0) $active="active"; else $active="";//для слайдера, чтоб у первой кортинки был класс актив
 		echo '<div class="item '.$active.'" id="carusel"><img src="../'.$row[0].'" alt="..." width="100%"></div>';
 		$i++;
 	}
